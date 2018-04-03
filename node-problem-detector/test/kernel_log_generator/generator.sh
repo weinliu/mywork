@@ -20,11 +20,11 @@
 # the test kernel log lines may be splitted by real kernel log.
 
 # PROBLEM is the path to the problem log.
-PROBLEM=${PROBLEM:-""}
+PROBLEM=${PROBLEM:-"problems/oom_kill"}
 # LINES_PER_SECOND is the log generating rate.
 LINES_PER_SECOND=${LINES_PER_SECOND:-1}
 # LOG_PATH is the path to generate kernel logs.
-LOG_PATH=${LOG_PATH:-"/dev/kmsg"}
+LOG_PATH=${LOG_PATH:-"/var/log/kern.log"}
 # RUN_ONCE specifies whether to keep generating problem logs or only
 # generate once.
 RUN_ONCE=${RUN_ONCE:-"false"}

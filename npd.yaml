@@ -78,6 +78,6 @@ spec:
           path: /etc/localtime
       - name: config
         configMap:
-          name: node-problem-detector-config
+          name: node-problem-detector
       serviceAccount: node-problem-detector
 

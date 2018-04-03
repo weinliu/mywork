@@ -39,7 +39,7 @@ spec:
         command:
         - node-problem-detector
         - --logtostderr
-        - --system-log-monitors=/config/cfg.yaml
+        - --system-log-monitors=/config/kernel-monitor-filelog.json
         #- --kernel-monitor=/config/kernel-monitor.json
         image: registry.reg-aws.openshift.com:443/openshift3/ose-node-problem-detector:v3.10 
         imagePullPolicy: Always
@@ -78,6 +78,7 @@ spec:
           path: /etc/localtime
       - name: config
         configMap:
-          name: node-problem-detector-config
+          #name: node-problem-detector
+          name: kernel-monitor-filelog
       serviceAccount: node-problem-detector
 

@@ -72,13 +72,12 @@ spec:
           path: /var/log/
       - name: kmsg
         hostPath:
-          path: /tmp/kmsg
+          path: /dev/kmsg
       - name: localtime
         hostPath:
           path: /etc/localtime
       - name: config
         configMap:
-          #name: node-problem-detector
-          name: kernel-monitor-filelog
+          name: node-problem-detector
       serviceAccount: node-problem-detector
 
